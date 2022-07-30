@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8">
+
+  <title>Document</title>
+</head>
+<body>
+  <script>
+
+    for(var i = 0; i < 5 ;i++){
+      console.log("안녕  " + i)
+    }
+
+
+    var tmp = [32,41,22,56]
+    var len = tmp.length;
+
+    for(var i = 0; i < len; i++){
+      console.log(tmp[i]);
+    }
+
+    for(var idx in tmp){
+      console.log(tmp[idx]);
+    }
+
+
+    var person = {
+      firstName : "gg",
+      lastName : "aa",
+      age : 16
+    }
+    for(key in person){
+      console.log(key)
+      console.log(person[key])
+    }
+
+
+    for(var num of tmp){
+      console.log(num)
+    }
+
+    var i = 1;
+    var tot = 0;
+    while(i <= 10){
+      tot = tot+i;
+      i++;
+    }
+    console.log(tot);
+
+    
+
+
+  </script>
+</body>
+</html>
