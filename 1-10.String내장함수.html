@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8">
+
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    var txt = "ABCDEFGHIJKLMN"
+    console.log(txt.length) // 문자열 길이
+
+    var str = "Please locate where 'locate'"
+    console.log(str.indexOf("locate")) // 7, 원하는 문자열이 없을때 -1
+    console.log(str.search("locate")) // 7
+
+    console.log(str.lastIndexOf("locate")) // 마지막 index
+
+    //slice
+    var str = "Apple, Banana, Kiwi"
+    console.log(str.slice(7,13)) // Banana
+    console.log(str.slice(7)) // Banana, kiwi
+    console.log(str.slice(-1)) // i 뒤에서부터 -1 -2 -3 -4 ~
+
+    //substring
+    console.log(str.substring(7,13)) // Banana 시작인덱스, 끝 인덱스  시작<= x < 끝
+
+    //substr
+    console.log(str.substr(7,6)) // Banana 시작인덱스부터, 갯수
+
+    var birth = "1992-08-07"
+    console.log(birth.substring(0,birth.indexOf("-"))) // 1992
+
+
+    //replace
+    var str = "Please visit here"
+    var str2 = str.replace("here","there")
+
+    var str = "Please visit here here here"
+    var str2 = str.replace("here","there") // Please visit there here here
+
+    var str = "Please visit here HERE here"
+    var str2 = str.replace(/here/gi,"there") // Please visit there there there
+
+
+    // 대소문자
+    console.log(str.toUpperCase() + " " + str.toLowerCase())
+
+    // concat
+    var txt1 = "hello"
+    var txt2 = "world"
+    console.log(txt1.concat(" ",txt2)) // hello world
+
+
+    // trim
+    var str = "           hello    "
+    console.log(str.trim()); // hello
+
+
+    // padStart
+    var str = "5"
+    console.log(str.padStart(4,0)) // 0005
+    console.log(str.padEnd(4,0)) // 5000
+
+    
+    //charAt
+    var str = "Hello World"
+    console.log(str.charAt(1)) // e
+
+
+    //split
+    var tags = "사과,바나나,키위,오렌지"
+    var arr = tags.split(",") 
+    console.log(arr) // ['사과', '바나나', '키위', '오렌지']
+    
+  </script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8">
+
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    
+    var x = 123
+    console.log(x.toString()) // "123"
+
+    // toFixed()
+    //지정된 소수점 자리수까지 반올림표기
+    var x = 12349.546542
+    console.log(x.toFixed(2)) // 12349.55
+
+    
+    // toPrecision()
+    var x = 9.5565
+    console.log(x.toPrecision(2)) // 9.6 정수까지 포함한 자릿수 반올림
+
+    var x = Number("10") // 10
+    var x = Number(true) // 1 <-> false = 0
+    console.log(Number("     20     ")) // 20
+    console.log(Number("    10,13"))  // NaN
+
+
+    //parseInt()
+    console.log(parseInt("3")) // 3
+    console.log(parseInt("3.9")) // 3
+    console.log(parseInt("10 33")) // 10
+    console.log(parseInt("12 years")) // 12
+    console.log(parseInt("years 13")) // NaN
+
+    //parseFloat()
+    console.log(parseFloat("10")) // 10
+    console.log(parseFloat("13.9")) // 13.9
+    console.log(parseFloat("13.9 aa")) // 13.9
+
+  </script>
+</body>
+</html>
