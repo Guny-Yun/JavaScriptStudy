@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8">
+
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    var x = true;
+    var y = new Boolean(true);
+
+    console.log(x===y) // false
+
+    console.log(typeof x) // boolean
+    console.log(typeof y) // object
+
+    var x;
+    console.log(Boolean(x)) // undefined
+  </script>
+</body>
+</html>
