@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8">
+
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    
+    var d = new Date();
+    console.log(d);
+
+    var d = new Date(2022,3,27,11,14,23);
+    console.log(d) //Wed Apr 27 2022 11:14:23 GMT+0900
+    //1 월 => 0부터
+
+
+    var year = d.getFullYear();
+    console.log(year); // 2022
+
+    var month = d.getMonth()
+    console.log(month); // 8
+
+    var day = d.getDay()
+    console.log(day) //  3  일-> 0 월->1 화->2
+
+
+    var hour = d.getHours();
+    var minute = d.getMinutes();
+    var second = d.getSeconds();
+
+    
+
+  </script>
+</body>
+</html>
