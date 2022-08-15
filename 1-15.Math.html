@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8">
+
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    
+    //round()
+    // 반올림, 반내림
+    console.log(Math.round(4.9)) // 5
+    console.log(Math.round(4.4)) // 4
+
+    //ceil()
+    //only 올림
+    console.log(Math.ceil(4.2)) // 5
+
+    //ex 1페이지에 보여지는 건수를 15개 설정 할 때,
+    console.log(Math.ceil(26/15)) // 무조건 최대 15개의 객체를 보여줌
+
+    //floor()
+    //only 내림
+    console.log(Math.floor(9.9)) // 9
+    console.log(Maht.floor(-4.2)) // -5
+
+    //trunc()
+    //정수만 리턴
+    console.log(Maht.trunc(9.9)); // 9
+    console.log(Math.trunc(-4.2)) // -4
+
+    //sign()
+    // 음수면 -1 양수면 1 0이면 0
+    console.log(Math.sign(-7)) // -1
+    console.log(Math.sign(12)) // 1
+
+    //pow() 제곱
+    console.log(Math.pow(8,2)) // 64
+
+    //sqrt() 루트
+    console.log(Math.sqrt(64)) // 8
+
+    //abs() 절대값
+    // only 양수로
+    console.log(Math.abs(-53.2)) // 53.2
+
+    //max()
+    console.log(Math.max(0,152,3,2,6,8,)) // 150
+    console.log(Math.min(102,1,251,236,-13)) // -13
+
+    //random()
+    var x = Math.random();
+    console.log(x) // 0~1사이 랜덤
+
+    //1~10 랜덤
+    var x = Math.floor((Math.random() * 10) + 1)  // 1~10
+
+
+    function getRndInteger(min, max){
+      return Math.floor(Math.random() * (max-min+1)) + min;
+    }
+
+    console.log(getRndInteger(32, 90)) // 32부터 90까지의숫자 랜덤
+
+  </script>
+</body>
+</html>
