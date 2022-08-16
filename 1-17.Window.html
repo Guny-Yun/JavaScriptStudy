@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8">
+
+  <title>Document</title>
+</head>
+<body>
+  <input type="text" />
+  <button type="button">저장</button>
+
+
+  <script>
+    //alert("alert 창 입니다.")
+
+    var yn = confirm("정말 삭제하시겠습니까?")
+    console.log(yn)
+    //확인버튼 누르면 yn = true 
+    if(confirm("정말삭제?")){
+      console.log("삭제 실행")
+    }
+
+
+    var txt = prompt("비밀번호를 입력하세요") // 인풋값 있음
+    console.log(txt) // 입력한 값
+
+    if(txt == null){
+      //취소버튼누름
+    }else if(txt == ""){
+      // 공백입력
+    }else if(txt !=""){
+      // 무언가 입력
+    }
+
+    window.open("http://naver.com")
+
+    window.print()//현재페이지 인쇄 팝업
+
+    setTimeout(function(){
+
+    }, 1000) // function을 1초 뒤에 수행
+
+    setInterval(function(){
+      console.log("3초마다 실행합니다.")
+    }, 3000) //3초마다 function 수행
+
+    var i = 0;
+    var tmp = setInterval(function(){
+      console.log("3 초마다 실행" + i)
+
+      if(i == 3){
+        clearInterval(tmp);
+      }
+      i++;
+    }, 3000)//i가 3이되면 셋인터벌 종료
+  </script>
+</body>
+</html>
