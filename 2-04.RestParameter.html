@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8">
+
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    function sum(x1,x2){
+      var y = x1 + x2;
+      console.log(y);
+      return y;
+    }
+    sum(5,7); // 12
+
+
+    function sum(x1,x2,x3){
+      var y = x1 + x2 + x3;
+      console.log(y)
+      return y;
+    }
+    // . . . . . 위의 파라미터들을 여러개 flexible 하게 주고 싶을때
+
+    function sum(...args){ // 배열로 파라미터가 들어감
+      var total = 0;
+      // for(var x of args){
+      //   total += x;
+      // }
+
+      args.forEach(function(x){
+        total += x;
+      })
+      // 주석과 동일
+
+      console.log(total);
+      return total;
+    }
+
+    sum(1,2,5,671,23,15)
+
+    sum(1,525,6,71,2,68,8,2,23,1235) //모두 정상동작
+
+  </script>
+</body>
+</html>
