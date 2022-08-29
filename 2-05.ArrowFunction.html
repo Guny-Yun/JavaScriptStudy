@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8">
+
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    function hello(){
+      console.log("hello")
+      return "hello world"
+    }
+
+
+    var hello = function(){
+      console.log("hello")
+      return "hello world"
+    }
+
+
+    var hello = () => "hello World";
+
+    var hello = (fullName) => "hello " + fullName
+
+    console.log(hello("Guny")) // hello Guny
+
+    var hello = fullName => "hello " + fullName
+
+
+  </script>
+</body>
+</html>

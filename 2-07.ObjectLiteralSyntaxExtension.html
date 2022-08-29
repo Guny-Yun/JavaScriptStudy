@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8">
+
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    
+    var firstName = "John";
+    var lastName = "Doe";
+
+
+    var person = {
+      firstName: "Guny",
+      lastName : "Yun"
+    }
+
+
+    var type = "student"
+    var score = {
+      [type]: "Jane",
+      score : 95
+    }
+
+    console.log(score.student); // Jane
+    // 오브젝트의 Key도 동적으로 할당 가능
+
+    var type2 = "grade";
+    score[type2] = 1
+
+
+  </script>
+</body>
+</html>
