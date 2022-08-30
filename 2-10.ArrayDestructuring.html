@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8">
+
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    
+    function getScores(){
+      return [70,80,90]
+    }
+    var scores = getScores();
+    console.log(scores) // 70 80 90
+
+    var [x,y,z] = getScores();
+    console.log(x) // 70
+    console.log(y) // 80
+    console.log(z) // 90
+
+    function getLocation(){
+      return [123.14, 25.023] //위도 경도
+    }
+
+    var [latitude, longtitude] = getLocation();
+    // 위도, 경도를 latitude, longtitude로 세팅
+  </script>
+</body>
+</html>

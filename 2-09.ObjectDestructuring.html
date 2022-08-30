@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8">
+
+  <title>Document</title>
+</head>
+<body>
+  <script>
+
+    function getPerson(){
+      return{
+        firstName : "Guny",
+        lastName : "Yun",
+        age : 11,
+        email : "dbsrjs7687@naver.com",
+        city : "Seoul",
+        country : "Korea"
+      };
+    }
+
+    var person = getPerson();
+    console.log(person);
+
+
+    var {firstName,lastName} = getPerson();
+    console.log(firstName);
+    console.log(lastName);
+
+  </script>
+</body>
+</html>
