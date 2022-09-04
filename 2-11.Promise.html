@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8">
+
+  <title>Document</title>
+</head>
+<body>
+  <script>
+
+    //Promise
+    var data = axios.get(url).then(function(response){
+      console.log(response.data);
+      return response.data;
+    })
+
+    var total = 0;
+    for(var item of data){
+      total += item.price;
+    }
+
+    console.log(total) // 에러.
+
+
+
+
+    function getData(){
+      //promise
+      return new Promise(function(resolve, reject){
+        axios.get(url).then(function(response){
+          console.log(response.data);
+          resolve(response.data);
+        });
+      });
+    }
+    var total = 0;
+
+    getData().then(function(data){
+      for(var item of data){
+        total += item.price;
+      }
+      console.log(total)
+    }); //정상동작
+
+  </script>
+</body>
+</html>
